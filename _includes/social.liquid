@@ -1,0 +1,33 @@
+{% for social in site.data.socials %}
+  {% case social[0] %}
+    {% when 'email' %}
+      {% assign email_value = social[1].normal_email | default: social[1] %}
+      <a href="mailto:{{ email_value }}" title="email"><i class="fa-solid fa-envelope" style="color: #d44638"></i></a>
+    {% when 'github_username' %}
+      {% if social[1] %}
+      <a href="https://github.com/{{ social[1] }}" title="GitHub" rel="external nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github" style="color: #420dab"></i>
+      </a>
+      {% endif %}
+    {% when 'linkedin_username' %}
+      {% if social[1] %}
+      <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn" rel="external nofollow noopener" target="_blank">
+        <i class="fa-brands fa-linkedin" style="color: #0a66c2"></i>
+      </a>
+      {% endif %}
+    {% when 'orcid_id' %}
+      {% assign orcid_url = social[1] | default: '' | prepend: 'https://orcid.org/' %}
+      {% if social[1] == nil or social[1] == '' %}
+        {% assign orcid_url = 'https://orcid.org/' %}
+      {% endif %}
+      <a href="{{ orcid_url }}" title="ORCID" rel="external nofollow noopener" target="_blank">
+        <i class="ai ai-orcid" style="color: #a6ce39"></i>
+      </a>
+    {% when 'scholar_userid' %}
+      {% if social[1] %}
+      <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar" rel="external nofollow noopener" target="_blank">
+        <i class="fas fa-fw fa-graduation-cap" style="color: #326ac4"></i>
+      </a>
+      {% endif %}
+  {% endcase %}
+{% endfor %}
