@@ -8,6 +8,13 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true
+  more_info: >
+    <div style="text-align: center; line-height: 1.8; margin-top: 0.75rem;">
+      <a href="mailto:2244078112@qq.com">email</a><br>
+      <a href="https://github.com/xyzepc" target="_blank" rel="external nofollow noopener">github</a><br>
+      <a href="https://orcid.org/" target="_blank" rel="external nofollow noopener">orcid</a><br>
+      <a href="/cv/">cv</a>
+    </div>
 
 selected_papers: true
 social: false
@@ -35,4 +42,3 @@ My research interests include:
 This page will collect my publications, selected projects, research updates, and CV.
 
 [ha-index: to be updated](https://www.irif.fr/~haberm/haindex.html).
-
