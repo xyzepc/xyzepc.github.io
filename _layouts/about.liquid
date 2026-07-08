@@ -7,6 +7,14 @@ layout: default
     display: none;
   }
 
+  #navbarNav .navbar-nav > .nav-item:first-child > .nav-link::before {
+    content: "\f015";
+    display: inline-block;
+    margin-right: 0.25rem;
+    font-family: "Font Awesome 7 Free", "Font Awesome 6 Free", "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
   .profile .contact-icons-profile {
     font-size: 2rem;
     line-height: 1.4;
@@ -20,7 +28,57 @@ layout: default
   .profile .more-info {
     text-align: center;
   }
+
+  .row:has(#xiao2025wrist) {
+    align-items: flex-start;
+  }
+
+  .row:has(#xiao2025wrist) .abbr {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chi-preview-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+  }
+
+  .chi-preview-pair picture,
+  .chi-preview-pair img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 </style>
+
+<script>
+  function setupChiPreviewPair() {
+    document.querySelectorAll('.row').forEach((row) => {
+      if (!row.querySelector('#xiao2025wrist')) return;
+      const abbr = row.querySelector('.abbr');
+      const picture = abbr && abbr.querySelector('picture');
+      if (!abbr || !picture || abbr.querySelector('.chi-preview-pair')) return;
+
+      const pair = document.createElement('div');
+      pair.className = 'chi-preview-pair';
+      picture.parentNode.insertBefore(pair, picture);
+      pair.appendChild(picture);
+
+      const second = document.createElement('img');
+      second.src = '/assets/img/publication_preview/ring-wrist-rationale-v2.png';
+      second.alt = 'ring-wrist-rationale-v2.png';
+      second.loading = 'eager';
+      second.className = 'preview z-depth-1 rounded';
+      second.setAttribute('data-zoomable', '');
+      pair.appendChild(second);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setupChiPreviewPair);
+</script>
 
 <div class="post">
   <header class="post-header">

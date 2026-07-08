@@ -29,5 +29,11 @@
         <i class="fas fa-fw fa-graduation-cap" style="color: #326ac4"></i>
       </a>
       {% endif %}
+    {% when 'work_url' %}
+      {% if social[1] %}
+      <a href="{{ social[1] }}" title="Homepage" rel="external nofollow noopener" target="_blank">
+        <i class="fa-solid fa-house" style="color: var(--global-text-color)"></i>
+      </a>
+      {% endif %}
   {% endcase %}
 {% endfor %}

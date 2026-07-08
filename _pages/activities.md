@@ -2,7 +2,7 @@
 layout: page
 title: professional activities
 permalink: /activities/
-nav: true
+nav: false
 nav_order: 2
 ---
 
@@ -17,4 +17,3 @@ To be updated.
 ## talks
 
 To be updated.
-

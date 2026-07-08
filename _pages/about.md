@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: zytx.png
   image_circular: true
   more_info: >
     <p>Research homepage</p><br>
@@ -16,7 +16,7 @@ selected_papers: true
 social: true
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 6
 
@@ -25,16 +25,17 @@ latest_posts:
   scrollable: true
   limit: 3
 ---
-
-I am building this academic homepage for research, job applications, and Ph.D. advisor outreach.
+I am currently a master's student at East China Normal University, advised by Associate Professor <u><a href="https://ygao36buffalo.github.io/" target="_blank" rel="external nofollow noopener">Gao Yang</a></u> and Associate Professor <u><a href="https://vpx-ecnu.github.io/" target="_blank" rel="external nofollow noopener">Li Yang</a></u>. My research focuses on wearable computing and human-computer interaction. I design and build wearable devices, multi-sensor robotic systems, and custom hardware to explore new forms of human-computer interaction.
 
 My research interests include:
 
-* Machine learning
-* Data-driven systems
-* Applied artificial intelligence
-* Research problems at the intersection of algorithms and real-world deployment
+* Wearable Computing
+* Robot-Mediated Human-Computer Interaction
+* Embedded Systems and Custom PCB Design
+* Novel Sensor Systems
 
-This page will collect my publications, selected projects, research updates, and CV.
+This page will collect my publications, <u><a href="/technical-highlights/">technical highlights</a></u>, <u><a href="/research-experience/">research experience</a></u>, and CV.
 
-[ha-index: to be updated](https://www.irif.fr/~haberm/haindex.html).
+Below is my resume.
+
+<u><a href="/cv/">Curriculum Vitae</a></u>.

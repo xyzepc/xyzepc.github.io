@@ -3,10 +3,11 @@ layout: page
 title: contact
 permalink: /contact/
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
-Email: [2244078112@qq.com](mailto:2244078112@qq.com)
+Email: [h13065011049h@gmail.com](mailto:h13065011049h@gmail.com)
+
+School Email: [51275901117@stu.ecnu.edu.cn](mailto:51275901117@stu.ecnu.edu.cn)
 
 GitHub: [xyzepc](https://github.com/xyzepc)
-

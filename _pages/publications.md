@@ -9,6 +9,58 @@ nav_order: 1
 
 <!-- _pages/publications.md -->
 
+<style>
+  .row:has(#xiao2025wrist) {
+    align-items: flex-start;
+  }
+
+  .row:has(#xiao2025wrist) .abbr {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chi-preview-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+  }
+
+  .chi-preview-pair picture,
+  .chi-preview-pair img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<script>
+  function setupChiPreviewPair() {
+    document.querySelectorAll('.row').forEach((row) => {
+      if (!row.querySelector('#xiao2025wrist')) return;
+      const abbr = row.querySelector('.abbr');
+      const picture = abbr && abbr.querySelector('picture');
+      if (!abbr || !picture || abbr.querySelector('.chi-preview-pair')) return;
+
+      const pair = document.createElement('div');
+      pair.className = 'chi-preview-pair';
+      picture.parentNode.insertBefore(pair, picture);
+      pair.appendChild(picture);
+
+      const second = document.createElement('img');
+      second.src = '/assets/img/publication_preview/ring-wrist-rationale-v2.png';
+      second.alt = 'ring-wrist-rationale-v2.png';
+      second.loading = 'eager';
+      second.className = 'preview z-depth-1 rounded';
+      second.setAttribute('data-zoomable', '');
+      pair.appendChild(second);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setupChiPreviewPair);
+</script>
+
 <!-- Bibsearch Feature -->
 
 {% include bib_search.liquid %}
