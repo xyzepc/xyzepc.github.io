@@ -21,6 +21,10 @@ nav_order: 2
     font-weight: 600;
   }
 
+  .techline {
+    overflow-x: auto;
+  }
+
   .techline img,
   .techline video {
     width: 100%;
@@ -289,6 +293,10 @@ nav_order: 2
     gap: 0.65rem;
     align-items: start;
     min-height: 315px;
+  }
+
+  #techline2 .techline-content--watch {
+    grid-template-columns: max-content max-content 500px;
   }
 
   .watch-left {
@@ -649,6 +657,18 @@ nav_order: 2
     width: 325px;
     flex-basis: 325px;
   }
+
+  #techline1 .techline-content--ring,
+  #techline2 .techline-content--watch,
+  #techline3 .techline-content--ring,
+  #techline4 .techline-content--wide,
+  #techline5 .techline-content--left-two,
+  #techline6 .techline-content--tactile,
+  #techline7 .techline-content--four,
+  #techline8 .techline-content--three,
+  #techline9 .techline-content--prototyping {
+    justify-self: start;
+  }
   
   .four-panel-caption {
     font-size: 0.9rem;
@@ -661,116 +681,31 @@ nav_order: 2
   }
 
   @media (max-width: 1100px) {
-    .techline-content--ring,
-    .techline-content--watch,
-    .techline-content--wide,
-    .techline-content--left-two,
-    .techline-content--tactile {
-      grid-template-columns: 1fr;
-      height: auto;
-    }
-
-    .ring-video,
-    .ring-video video,
-    .watch-middle,
-    .watch-right,
-    .watch-right video,
-    .wide-middle,
-    .wide-right,
-    .wide-right video,
-    .left-two-video,
-    .left-two-video video,
-    .tactile-video,
-    .tactile-video video {
-      height: auto;
-    }
-
-    .watch-left,
-    .wide-left {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      grid-template-rows: auto auto;
-      height: auto;
-    }
-
-    .techline img,
-    .techline video,
-    .prototyping-panel img {
-      height: auto;
-    }
-
-    .techline-content--four,
-    .techline-content--three {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+    #techline1 .techline-content--ring,
+    #techline2 .techline-content--watch,
+    #techline3 .techline-content--ring,
+    #techline4 .techline-content--wide,
+    #techline5 .techline-content--left-two,
+    #techline6 .techline-content--tactile,
+    #techline7 .techline-content--four,
+    #techline8 .techline-content--three,
+    #techline9 .techline-content--prototyping {
+      justify-self: start;
     }
   }
 
   @media (max-width: 576px) {
-    .ring-panels,
-    .glasses-panels,
-    .tactile-panels,
-    .watch-left,
-    .wide-left,
-    .techline-content--four,
-    .techline-content--three {
-      grid-template-columns: 1fr;
-    }
-
-    .techline-content--prototyping {
-      grid-template-columns: 1fr;
-    }
-
-    #techline3 .glasses-panels,
-    #techline6 .tactile-panels {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    #techline3 .glasses-panel-column,
-    #techline3 .glasses-panel-column:nth-child(2),
-    #techline6 .tactile-panel-column,
-    #techline6 .tactile-panel-column:nth-child(2) {
-      width: 100%;
-      flex-basis: auto;
-    }
-
+    #techline1 .techline-content--ring,
+    #techline2 .techline-content--watch,
+    #techline3 .techline-content--ring,
+    #techline4 .techline-content--wide,
+    #techline5 .techline-content--left-two,
+    #techline6 .techline-content--tactile,
     #techline7 .techline-content--four,
-    #techline8 .techline-content--three {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-
-    #techline7 .four-panel,
-    #techline7 .four-panel:nth-child(2),
-    #techline7 .four-panel:nth-child(3),
-    #techline7 .four-panel:nth-child(4),
-    #techline8 .four-panel,
-    #techline8 .four-panel:nth-child(2),
-    #techline8 .four-panel:nth-child(3) {
-      width: 100%;
-      flex-basis: auto;
-    }
-
-    #techline4 .wide-left,
-    #techline4 .wide-middle,
-    #techline5 .left-two-panels {
-      width: 100%;
-    }
-
+    #techline8 .techline-content--three,
     #techline9 .techline-content--prototyping {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr;
+      justify-self: start;
     }
-
-    #techline9 .prototyping-panel,
-    #techline9 .prototyping-panel:nth-child(2),
-    #techline9 .prototyping-panel:nth-child(3) {
-      width: 100%;
-      flex-basis: auto;
-    }
-
   }
 </style>
 
