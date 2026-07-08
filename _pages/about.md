@@ -25,7 +25,7 @@ latest_posts:
   scrollable: true
   limit: 3
 ---
-I am currently a master's student at East China Normal University, advised by Associate Professor <u><a href="https://ygao36buffalo.github.io/" target="_blank" rel="external nofollow noopener">Gao Yang</a></u> and Associate Professor <u><a href="https://vpx-ecnu.github.io/" target="_blank" rel="external nofollow noopener">Li Yang</a></u>. My research focuses on wearable computing and human-computer interaction. I design and build wearable devices, multi-sensor robotic systems, and custom hardware to explore new forms of human-computer interaction.
+I am currently a master's student at East China Normal University, advised by Associate Professor <u><a href="https://ygao36buffalo.github.io/" target="_blank" rel="external nofollow noopener">Gao Yang</a></u> and Associate Professor <u><a href="https://ihpdep.github.io/" target="_blank" rel="external nofollow noopener">Li Yang</a></u>. My research focuses on wearable computing and human-computer interaction. I design and build wearable devices, multi-sensor robotic systems, and custom hardware to explore new forms of human-computer interaction.
 
 My research interests include:
 
@@ -34,7 +34,7 @@ My research interests include:
 * Embedded Systems and Custom PCB Design
 * Novel Sensor Systems
 
-This page will collect my publications, <u><a href="/technical-highlights/">technical highlights</a></u>, <u><a href="/research-experience/">research experience</a></u>, and CV.
+This page will collect my publications, <u><a href="/technical-highlights/">technical highlights</a></u>, <u><a href="/cv/#experience">research experience</a></u>, and <u><a href="/cv/">CV</a></u>.
 
 Below is my resume.
 
