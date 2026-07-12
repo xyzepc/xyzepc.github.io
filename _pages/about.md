@@ -34,7 +34,7 @@ My research interests include:
 * Embedded Systems and Custom PCB Design
 * Novel Sensor Systems
 
-This page will collect my publications, <u><a href="/technical-highlights/">technical highlights</a></u>, <u><a href="/cv/#experience">research experience</a></u>, and <u><a href="/cv/">CV</a></u>.
+This page will collect my publications, <u><a href="/technical-highlights/">Technical Highlights</a></u>, <u><a href="/cv/#experience">research experience</a></u>, and <u><a href="/cv/">CV</a></u>.
 
 Below is my resume.
 

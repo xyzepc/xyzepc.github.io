@@ -1,6 +1,6 @@
 ---
 layout: page
-title: technical highlights
+title: Technical Highlights
 permalink: /technical-highlights/
 nav: true
 nav_order: 2
@@ -131,13 +131,13 @@ nav_order: 2
   #techline1 .ring-video {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
-    height: 430px;
   }
 
   #techline1 .ring-video video {
     height: 100%;
     min-height: 0;
-    width: 400px
+    width: 418px;
+    height: 395px;
   }
 
   #techline1 .techline-video-title {
@@ -203,7 +203,7 @@ nav_order: 2
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     height: 420px;
-    width: 410px
+    width: 430px
   }
 
   #techline3 .ring-video video {
@@ -231,7 +231,7 @@ nav_order: 2
   }
 
   #techline4 .wide-left {
-    width: 80px;
+    width: 90px;
     display: grid;
     grid-template-rows: auto auto auto;
     align-content: start;
@@ -254,7 +254,7 @@ nav_order: 2
   }
 
   #techline4 .wide-middle {
-    width: 300px;
+    width: 310px;
     display: grid;
     grid-template-rows: auto auto;
     align-content: start;
@@ -272,13 +272,13 @@ nav_order: 2
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
     height: 290px;
-    width: 300px;
+    width: 340px;
   }
 
   #techline4 .wide-right video {
-    height: 100%;
+    height: 275px;
     min-height: 0;
-    width: 475px;
+    width: 480px;
   }
 
   #techline4 .techline-video-title {
@@ -321,13 +321,13 @@ nav_order: 2
 
   .watch-middle img {
     width: 100%;
-    height: auto;
+    height: 325px;
   }
 
   .watch-middle .techline-title {
-    font-size: 0.68rem;
+    font-size: 0.7rem;
     line-height: 1.18;
-    padding-bottom: 0.35rem;
+    /* padding-bottom: 0.35rem; */
   }
 
   .watch-left .techline-caption {
@@ -346,7 +346,7 @@ nav_order: 2
   .watch-right,
   .watch-right video {
     height: 325px;
-    width:495px;
+    width:520px;
   }
 
   .watch-right .techline-video-title {
@@ -428,13 +428,13 @@ nav_order: 2
   #techline5 .left-two-video {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
-    height: 440px;
+    height: 425px;
   }
 
   #techline5 .left-two-video video {
-    height: 100%;
+    height: 385px;
     min-height: 0;
-    width: 625px;
+    width: 650px;
   }
 
   #techline5 .left-two-video-title {
@@ -488,6 +488,10 @@ nav_order: 2
     gap: 0.65rem;
   }
 
+  #techline6 {
+    overflow-y: hidden;
+  }
+
   #techline6 .tactile-panels {
     width: max-content;
     max-width: 100%;
@@ -504,8 +508,8 @@ nav_order: 2
   }
 
   #techline6 .tactile-panel-column:nth-child(2) {
-    width: 160px;
-    flex-basis: 160px;
+    width: 170px;
+    flex-basis: 170px;
   }
 
   #techline6 .tactile-panel img {
@@ -523,13 +527,13 @@ nav_order: 2
   #techline6 .tactile-video {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
-    height: 390px;
+    height: 400px;
   }
 
   #techline6 .tactile-video video {
     height: 100%;
     min-height: 0;
-    width:590px
+    width:600px
   }
 
   #techline6 .tactile-video-title {
@@ -580,18 +584,18 @@ nav_order: 2
   }
 
   #techline9 .prototyping-panel {
-    width: 365px;
-    flex: 0 0 365px;
+    width: 370px;
+    flex: 0 0 370px;
   }
 
   #techline9 .prototyping-panel:nth-child(2) {
-    width: 205px;
-    flex-basis: 205px;
+    width: 215px;
+    flex-basis: 215px;
   }
 
   #techline9 .prototyping-panel:nth-child(3) {
-    width: 290px;
-    flex-basis: 290px;
+    width: 295px;
+    flex-basis: 295px;
   }
 
   .four-panel {
@@ -615,8 +619,8 @@ nav_order: 2
   }
 
   #techline7 .four-panel {
-    width: 195px;
-    flex: 0 0 195px;
+    width: 200px;
+    flex: 0 0 200px;
   }
 
   #techline7 .four-panel:nth-child(2) {
@@ -625,18 +629,90 @@ nav_order: 2
   }
 
   #techline7 .four-panel:nth-child(3) {
-    width: 225px;
-    flex-basis: 225px;
+    width: 230px;
+    flex-basis: 230px;
   }
 
   #techline7 .four-panel:nth-child(4) {
-    width: 232px; 
-    flex-basis: 232px;
+    width: 235px; 
+    flex-basis: 235px;
+  }
+
+  #techline6-1 .techline-content--voice-edge {
+    width: max-content;
+    max-width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 0.55rem;
+  }
+
+  #techline6-1 .voice-edge-column {
+    display: grid;
+    align-content: start;f
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  #techline6-1 .voice-edge-column:nth-child(1) {
+    width: 120px;
+    flex: 0 0 120px;
+  }
+
+  #techline6-1 .voice-edge-column:nth-child(2) {
+    width: 225px;
+    flex: 0 0 225px;
+  }
+
+  #techline6-1 .voice-edge-column:nth-child(3) {
+    width: 160px;
+    flex: 0 0 160px;
+  }
+
+  #techline6-1 .voice-edge-column:nth-child(4) {
+    width: 370px;
+    flex: 0 0 370px;
+  }
+
+  #techline6-1 .voice-edge-panel {
+    margin: 0;
+    text-align: center;
+  }
+
+  #techline6-1 .voice-edge-panel img,
+  #techline6-1 .voice-edge-video video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  #techline6-1 .voice-edge-video {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    height: 330px;
+  }
+
+  #techline6-1 .voice-edge-video video {
+    height: 100%;
+    min-height: 0;
+  }
+
+  #techline6-1 .techline-video-title {
+    font-size: 0.72rem;
+    line-height: 1.18;
+    margin-bottom: 0.35rem;
+  }
+
+  #techline6-1 .four-panel-caption {
+    margin-top: 0.25rem;
+    font-size: 0.68rem;
+    line-height: 1.18;
+    text-align: left;
   }
 
   #techline8 .techline-content--three {
     width: max-content;
-    max-width: 100%;
+    max-width: 100%;f
     display: flex;
     justify-content: start;
     align-items: start;
@@ -649,13 +725,13 @@ nav_order: 2
   }
 
   #techline8 .four-panel:nth-child(2) {
-    width: 295px;
-    flex-basis: 295px;
+    width: 300px;
+    flex-basis: 300px;
   }
 
   #techline8 .four-panel:nth-child(3) {
-    width: 325px;
-    flex-basis: 325px;
+    width: 330px;
+    flex-basis: 330px;
   }
 
   #techline1 .techline-content--ring,
@@ -665,6 +741,7 @@ nav_order: 2
   #techline5 .techline-content--left-two,
   #techline6 .techline-content--tactile,
   #techline7 .techline-content--four,
+  #techline6-1 .techline-content--voice-edge,
   #techline8 .techline-content--three,
   #techline9 .techline-content--prototyping {
     justify-self: start;
@@ -688,6 +765,7 @@ nav_order: 2
     #techline5 .techline-content--left-two,
     #techline6 .techline-content--tactile,
     #techline7 .techline-content--four,
+    #techline6-1 .techline-content--voice-edge,
     #techline8 .techline-content--three,
     #techline9 .techline-content--prototyping {
       justify-self: start;
@@ -702,6 +780,7 @@ nav_order: 2
     #techline5 .techline-content--left-two,
     #techline6 .techline-content--tactile,
     #techline7 .techline-content--four,
+    #techline6-1 .techline-content--voice-edge,
     #techline8 .techline-content--three,
     #techline9 .techline-content--prototyping {
       justify-self: start;
@@ -834,7 +913,7 @@ nav_order: 2
   </section>
 
   <section class="techline" id="techline4">
-    <h2 class="techline-row-title">Fingertip force sensing using force-sensitive resistors (FSRs)</h2>
+    <h2 class="techline-row-title">Fingertip Force Sensing Using Force-Sensitive Resistors (FSRs)</h2>
     <div class="techline-content--wide">
       <div class="wide-left">
         <img src="/assets/img/techs/techsline4/left-1.png" alt="Five-finger piezoresistive pressure sensing hardware" data-zoomable>
@@ -924,6 +1003,42 @@ nav_order: 2
           <source src="/assets/video/techs/techsline6/demo.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+      </div>
+    </div>
+  </section>
+
+  <section class="techline" id="techline6-1">
+    <h2 class="techline-row-title">Edge AI Voice Interaction Hardware Selection and Deployment</h2>
+    <div class="techline-content--voice-edge">
+      <div class="voice-edge-column">
+        <figure class="voice-edge-panel">
+          <img src="/assets/img/techs/techsline6.1/edge-ai-hardware-platform.png" alt="RK3588 and ReSpeaker edge AI voice interaction hardware platform" data-zoomable>
+          <figcaption class="techline-caption four-panel-caption">A speech recognition system based on the Rockchip RK3588 and ReSpeaker Mic Array v2.0, supporting speaker verification, command recognition, accelerated by a 6 TOPS NPU.</figcaption>
+        </figure>
+      </div>
+      <div class="voice-edge-column">
+        <figure class="voice-edge-panel">
+          <img src="/assets/img/techs/techsline6.1/voice-device-enclosure.png" alt="Voice interaction embedded device enclosure and assembly" data-zoomable>
+          <figcaption class="techline-caption four-panel-caption">Hardware platform selection and embedded system assembly for an edge AI voice interaction device, equipped with a 10.1-inch touchscreen and adapted to a customized enclosure.</figcaption>
+        </figure>
+      </div>
+      <div class="voice-edge-column">
+        <div class="voice-edge-video">
+          <h3 class="techline-video-title">Touchscreen Driver Testing</h3>
+          <video class="techline-video" controls playsinline preload="metadata">
+            <source src="/assets/video/techs/techsline6.1/touchscreen-drive-click-test.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="voice-edge-column">
+        <div class="voice-edge-video">
+          <h3 class="techline-video-title">Speech Recognition System Based on Rockchip RK3588 and ReSpeaker Mic Array v2.0 for Speaker Verification and Command Recognition</h3>
+          <video class="techline-video" controls playsinline preload="metadata">
+            <source src="/assets/video/techs/techsline6.1/speaker-voice-command-recognition.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   </section>
