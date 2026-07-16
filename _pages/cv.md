@@ -223,7 +223,7 @@ nav_order: 5
 
   <div class="cv-content">
     <div class="cv-actions">
-      <a class="cv-button cv-button-download" href="/assets/pdf/cvhzc.docx" download>Download CV</a>
+      <a class="cv-button cv-button-download" href="/assets/pdf/cv_HuangZhichao0714.pdf" download>Download CV</a>
       <a class="cv-button" href="https://github.com/xyzepc" target="_blank" rel="external nofollow noopener">GitHub</a>
       <a class="cv-button" href="https://scholar.google.com/citations?hl=en&user=xTOz_koAAAAJ" target="_blank" rel="external nofollow noopener">Google Scholar</a>
       <a class="cv-button" href="https://orcid.org/0009-0008-5609-687X" target="_blank" rel="external nofollow noopener">ORCID</a>
