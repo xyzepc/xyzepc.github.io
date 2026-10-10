@@ -379,68 +379,65 @@ nav_order: 2
     height: 315px;
   }
 
-  .techline-content--left-two {
+  #techline5 {
+    --teleop-left-width: 460px;
+    --teleop-right-width: 420px;
+    --teleop-column-gap: 0.75rem;
+  }
+
+  #techline5 .teleop-columns {
     display: grid;
-    grid-template-columns: 260px 780px;
-    gap: 0.85rem;
+    grid-template-columns: var(--teleop-left-width) var(--teleop-right-width);
+    width: max-content;
+    column-gap: var(--teleop-column-gap);
     align-items: start;
   }
 
-  .left-two-panels {
+  #techline5 .teleop-column {
     display: grid;
-    gap: 0.75rem;
+    align-content: start;
+    gap: 0.4rem;
+    min-width: 0;
   }
 
-  .left-two-video,
-  .left-two-video video {
-    height: 440px;
+  #techline5 .teleop-video {
+    display: grid;
+    gap: 0.4rem;
   }
 
-  .left-two-video-title {
-    margin: 0 0 0.5rem;
-    font-size: 0.95rem;
-    line-height: 1.25;
-    font-weight: 500;
+  #techline5 .teleop-master-panels {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    align-items: start;
   }
 
-  #techline5 .techline-content--left-two {
-    grid-template-columns: max-content 620px;
-    gap: 0.65rem;
+  #techline5 .teleop-panel {
+    margin: 0;
   }
 
-  #techline5 .left-two-panels {
-    width: 240px;
-    gap: 0.55rem;
-  }
-
-  #techline5 .left-two-panels img {
+  #techline5 .teleop-panel img,
+  #techline5 .teleop-columns video {
     width: 100%;
     height: auto;
   }
 
-  #techline5 .left-two-panels .techline-caption {
+  #techline5 .teleop-columns video {
+    aspect-ratio: 16 / 9;
+  }
+
+  #techline5 .techline-caption {
     width: 100%;
-    font-size: 0.6rem;
-    line-height: 1.12;
+    margin: 0.35rem 0 0;
+    font-size: 0.68rem;
+    line-height: 1.25;
     overflow-wrap: break-word;
   }
 
-  #techline5 .left-two-video {
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
-    height: 425px;
-  }
-
-  #techline5 .left-two-video video {
-    height: 385px;
-    min-height: 0;
-    width: 650px;
-  }
-
-  #techline5 .left-two-video-title {
+  #techline5 .techline-video-title {
     font-size: 0.72rem;
     line-height: 1.18;
-    margin-bottom: 0.35rem;
+    margin: 0;
   }
 
   .techline-content--tactile {
@@ -738,7 +735,7 @@ nav_order: 2
   #techline2 .techline-content--watch,
   #techline3 .techline-content--ring,
   #techline4 .techline-content--wide,
-  #techline5 .techline-content--left-two,
+  #techline5 .teleop-columns,
   #techline6 .techline-content--tactile,
   #techline7 .techline-content--four,
   #techline6-1 .techline-content--voice-edge,
@@ -762,7 +759,7 @@ nav_order: 2
     #techline2 .techline-content--watch,
     #techline3 .techline-content--ring,
     #techline4 .techline-content--wide,
-    #techline5 .techline-content--left-two,
+    #techline5 .teleop-columns,
     #techline6 .techline-content--tactile,
     #techline7 .techline-content--four,
     #techline6-1 .techline-content--voice-edge,
@@ -777,7 +774,7 @@ nav_order: 2
     #techline2 .techline-content--watch,
     #techline3 .techline-content--ring,
     #techline4 .techline-content--wide,
-    #techline5 .techline-content--left-two,
+    #techline5 .teleop-columns,
     #techline6 .techline-content--tactile,
     #techline7 .techline-content--four,
     #techline6-1 .techline-content--voice-edge,
@@ -785,6 +782,60 @@ nav_order: 2
     #techline9 .techline-content--prototyping {
       justify-self: start;
     }
+  }
+  #techline4 {
+    --pressure-left-width: 410px;
+    --pressure-right-width: 470px;
+    --pressure-column-gap: 0.75rem;
+  }
+
+  #techline4 .pressure-columns {
+    display: grid;
+    grid-template-columns: var(--pressure-left-width) var(--pressure-right-width);
+    width: max-content;
+    gap: var(--pressure-column-gap);
+    align-items: start;
+  }
+
+  #techline4 .pressure-column {
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
+    min-width: 0;
+  }
+
+  #techline4 .pressure-panel {
+    margin: 0;
+  }
+
+  #techline4 .pressure-glove-images {
+    display: grid;
+    grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.18fr);
+    gap: 0.5rem;
+    align-items: start;
+  }
+
+  #techline4 .pressure-panel img {
+    width: 100%;
+    height: auto;
+  }
+
+  #techline4 .pressure-column .techline-caption {
+    margin: 0.35rem 0 0;
+    font-size: 0.68rem;
+    line-height: 1.25;
+    overflow-wrap: break-word;
+  }
+
+  #techline4 .pressure-column .techline-video-title {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    line-height: 1.18;
+  }
+
+  #techline4 .pressure-column video {
+    height: auto;
+    width: 100%;
   }
 </style>
 
@@ -913,56 +964,74 @@ nav_order: 2
   </section>
 
   <section class="techline" id="techline4">
-    <h2 class="techline-row-title">Fingertip Force Sensing Using Force-Sensitive Resistors (FSRs)</h2>
-    <div class="techline-content--wide">
-      <div class="wide-left">
-        <img src="/assets/img/techs/techsline4/left-1.png" alt="Five-finger piezoresistive pressure sensing hardware" data-zoomable>
-        <img src="/assets/img/techs/techsline4/left-2.png" alt="Five-finger pressure sensing glove" data-zoomable>
-        <p class="techline-caption">
-          Piezoresistive pressure sensing system with custom-designed pressure sensors for acquiring fingertip pressure data from all five fingers. (Apr. 2025)
-        </p>
+    <h2 class="techline-row-title">Piezoresistive Fingertip Pressure Sensing and Tactile Sensor Arrays</h2>
+    <div class="pressure-columns">
+      <div class="pressure-column">
+        <figure class="pressure-panel">
+          <div class="pressure-glove-images">
+            <img src="{{ '/assets/img/techs/techsline4/left-2.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Piezoresistive pressure sensing glove for acquiring fingertip pressure data from all five fingers." data-zoomable>
+            <img src="{{ '/assets/img/techs/techsline4/middle.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Three daily scenarios and their corresponding visualizations of five-finger piezoresistive pressure sensor data." data-zoomable>
+          </div>
+          <figcaption class="techline-caption">Piezoresistive pressure sensing system with custom-designed pressure sensors for acquiring fingertip pressure data from all five fingers. (Apr. 2025)</figcaption>
+        </figure>
+        <div class="pressure-video">
+          <h3 class="techline-video-title">Demo: Fingertip Pressure and Hand Pose Prediction from EMG and Ring-Based IMU Data. Trained using data collected with our custom sensing devices.</h3>
+          <video class="techline-video" controls playsinline preload="metadata">
+            <source src="{{ '/assets/video/techs/techsline4/demo.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-
-      <div class="wide-middle">
-        <h3 class="techline-title">Three Daily Scenarios and Their Corresponding Visualizations of Five-Finger Piezoresistive Pressure Sensor Data.</h3>
-        <img src="/assets/img/techs/techsline4/middle.png" alt="Daily scenarios and fingertip pressure sensor data visualizations" data-zoomable>
-      </div>
-
-      <div class="wide-right">
-        <h3 class="techline-video-title">Demo: Fingertip Pressure and Hand Pose Prediction from EMG and Ring-Based IMU Data</h3>
-        <video class="techline-video" controls playsinline preload="auto">
-          <source src="/assets/video/techs/techsline4/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="pressure-column">
+        <figure class="pressure-panel">
+          <img src="{{ '/assets/img/techs/techsline4/right_top_caption.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="First and second versions of piezoresistive tactile sensor arrays with custom-built readout boards" data-zoomable>
+          <figcaption class="techline-caption">Piezoresistive tactile sensor arrays: first version (left) and second version (right), featuring 55 x 55 mm and 23 x 12 mm sensors with custom-built readout boards. (Jun. 2025)</figcaption>
+        </figure>
+        <div class="pressure-video">
+          <h3 class="techline-video-title">Demo: Driver Validation and Data Readout for Piezoresistive Sensor Arrays: 10 x 20 (Left) and 16 x 16 (Right)</h3>
+          <video class="techline-video" controls playsinline preload="metadata">
+            <source src="{{ '/assets/video/techs/techsline4/right_bottom_video_title.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="techline" id="techline5">
-    <h2 class="techline-row-title">Force-Feedback VR Controller for Robotic Gripper Teleoperation</h2>
-    <div class="techline-content--left-two">
-      <div class="left-two-panels">
-        <figure class="ring-panel">
-          <img src="/assets/img/techs/techsline5/controller-mechanical-design.png" alt="Mechanical design of force-feedback VR controller" data-zoomable>
-          <figcaption class="techline-caption">
-            Version 1 of a motor-driven force-feedback-enhanced VR controller with a custom mechanical design, preserving the original functionality of the controller. Force-sensitive resistors (FSRs) on the controller and the robotic gripper are algorithmically linked to provide grasp force feedback. (Feb. 2026)
-          </figcaption>
-        </figure>
-
-        <figure class="ring-panel">
-          <img src="/assets/img/techs/techsline5/servo-sensor-control-board.png" alt="ESP32 servo and sensor control board" data-zoomable>
-          <figcaption class="techline-caption">
-            ESP32-based servo and sensor control board with wireless network communication to the robotic arm industrial controller.
-          </figcaption>
-        </figure>
+    <h2 class="techline-row-title">VR and Motor-Based Force-Feedback Teleoperation</h2>
+    <div class="teleop-columns">
+      <div class="teleop-column">
+        <div class="teleop-master-panels">
+          <figure class="teleop-panel">
+            <img src="{{ '/assets/img/techs/techsline5/controller-mechanical-design.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Mechanical design of the motor-driven force-feedback master controller" data-zoomable>
+            <figcaption class="techline-caption">Motor-driven master controller with a custom mechanical design, preserving VR-controller functionality. FSRs on the controller and gripper provide grasp-force feedback. (Feb. 2026)</figcaption>
+          </figure>
+          <figure class="teleop-panel">
+            <img src="{{ '/assets/img/techs/techsline5/servo-sensor-control-board.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="ESP32 servo and sensor control board" data-zoomable>
+            <figcaption class="techline-caption">ESP32-based servo and sensor control board with wireless communication to the robotic arm controller, integrating sensor acquisition and motor control.</figcaption>
+          </figure>
+        </div>
+        <div class="teleop-video">
+          <h3 class="techline-video-title">Demo: Robotic Gripper Teleoperation with a Motor-Driven Force-Feedback VR Controller for Soft and Hard Objects</h3>
+          <video class="techline-video" controls playsinline preload="metadata">
+            <source src="{{ '/assets/video/techs/techsline5/demo.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-
-      <div class="left-two-video">
-        <h3 class="left-two-video-title">Version 2 mounts the VR controller on the back of the hand to maximize hand freedom and enhance user experience, while maintaining a 1:1 position mapping between the controller and the robotic gripper. (Feb. 2026)</h3>
-        <video class="techline-video" controls playsinline preload="auto">
-          <source src="/assets/video/techs/techsline5/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+      <div class="teleop-column">
+        <figure class="teleop-panel">
+          <img src="{{ '/assets/img/techs/techsline5/gripper-mechanical-design.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Strain-gauge force-feedback slave gripper mechanical design" data-zoomable>
+          <figcaption class="techline-caption">Strain-gauge force-feedback slave gripper mechanical design, with 5 g-equivalent sensitivity and destructive grasping capability. (Aug. 2026)</figcaption>
+        </figure>
+        <div class="teleop-video">
+          <h3 class="techline-video-title">Demo: Custom Force-Feedback Gripper Teleoperation on an AgileX Arm</h3>
+          <video class="techline-video" controls playsinline preload="metadata">
+            <source src="{{ '/assets/video/techs/techsline5/master-slave-arm-demo.mp4' | relative_url }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </div>
   </section>
