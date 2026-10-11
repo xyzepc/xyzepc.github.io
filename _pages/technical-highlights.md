@@ -985,7 +985,7 @@ nav_order: 2
       <div class="pressure-column">
         <figure class="pressure-panel">
           <img src="{{ '/assets/img/techs/techsline4/right_top_caption.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="First and second versions of piezoresistive tactile sensor arrays with custom-built readout boards" data-zoomable>
-          <figcaption class="techline-caption">Piezoresistive tactile sensor arrays: first version (left) and second version (right), featuring 55 x 55 mm and 23 x 12 mm sensors with custom-built readout boards. (Jun. 2025)</figcaption>
+          <figcaption class="techline-caption">Piezoresistive tactile sensor arrays: first version (left) and second version (right), featuring 55 x 55 mm and 23 x 12 mm sensors with custom-built readout boards. (Aug. 2026)</figcaption>
         </figure>
         <div class="pressure-video">
           <h3 class="techline-video-title">Demo: Driver Validation and Data Readout for Piezoresistive Sensor Arrays: 10 x 20 (Left) and 16 x 16 (Right)</h3>
